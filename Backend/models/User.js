@@ -8,6 +8,14 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
+    email: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: String,
+        required: true
+    },
     password: {
         type: String,
         required: true
@@ -23,7 +31,7 @@ userSchema.methods.generateToken = async function () {
         return jwt.sign(
             {
                 userId: this._id.toString(),
-                username: this.username,
+                name: this.name,
             },
             process.env.JWT_SECRET_KEY,
             {
