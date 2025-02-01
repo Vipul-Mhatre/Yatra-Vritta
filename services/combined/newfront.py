@@ -118,9 +118,7 @@ def show_city_feature_explorer():
                     except Exception as e:
                         st.error(f"Error displaying the map: {e}")
 
-                # Optionally, read the CSV from the backend's file path
-                # We'll call the /download endpoint to get the CSV content.
-                csv_file_server_path = result["csv_file"]  # e.g. "./output/medical_tourism_CityName.csv"
+                csv_file_server_path = result["csv_file"] 
                 download_url = f"{API_URL}/download?file_path={csv_file_server_path}"
                 try:
                     csv_resp = requests.get(download_url)
