@@ -3,11 +3,11 @@
 ## Features Implemented
 
 - **User Authentication**
+- **Fetch Agency Information**
+- **Browse Available Sightseeing Options**
 
 ## Features to be Implemented
 
-- **Fetch Agency Information**
-- **Browse Available Sightseeing Options**
 - **View Sightseeing Details**
 - **Booking a Sightseeing Tour**
 - **Payment Process**
