@@ -693,7 +693,6 @@ def sightseeing_search():
             folium.GeoJson(geom, name=row["name"]).add_to(m)
     m.save(map_file)
 
-    # Read map HTML
     try:
         with open(map_file, 'r', encoding='utf-8') as f:
             map_html = f.read()
@@ -745,7 +744,6 @@ def sightseeing_details(sightseeing_id):
     lat = matched_places.iloc[0]['Latitude']
     lon = matched_places.iloc[0]['Longitude']
 
-    # Re-fetch from Overpass
     osm_result = fetch_sightseeing_overpy(lat, lon, radius)
     if not osm_result:
         return jsonify({"status": "error", "message": "Sightseeing spot not found"}), 404
@@ -789,7 +787,7 @@ def sightseeing_details(sightseeing_id):
         lat_ = matched_item.center_lat if matched_item.center_lat else None
         lon_ = matched_item.center_lon if matched_item.center_lon else None
         tags_ = dict(matched_item.tags)
-    else:  # relation
+    else:  
         name = matched_item.tags.get("name", "N/A")
         lat_ = matched_item.center_lat if matched_item.center_lat else None
         lon_ = matched_item.center_lon if matched_item.center_lon else None

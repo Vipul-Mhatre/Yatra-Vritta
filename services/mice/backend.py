@@ -9,15 +9,12 @@ import os
 import matplotlib
 import plotly.express as px
 
-matplotlib.use('Agg')  # Use non-interactive backend for Matplotlib
+matplotlib.use('Agg')  
 
-# Initialize Flask
 app = Flask(__name__)
 
-# Initialize Overpass API
 api = overpy.Overpass()
 
-# Define categories (used in /process endpoint)
 categories = {
     "medical_tourism": [
         '["amenity"="hospital"]',
@@ -52,11 +49,9 @@ categories = {
     ],
 }
 
-# Create output directory if not exists
 output_dir = "./output"
 os.makedirs(output_dir, exist_ok=True)
 
-# Load cities CSV (ensure the file is present)
 cities_file = "cities_lat_long_geonamescache_with_countries.csv"
 try:
     cities_data = pd.read_csv(cities_file, encoding='utf-8')
@@ -210,7 +205,6 @@ def process_data():
     if gdf.empty:
         return jsonify({"error": "No data found"}), 404
 
-    # Save output files
     csv_file = os.path.join(output_dir, f"{category}_{city_name}.csv")
     geojson_file = os.path.join(output_dir, f"{category}_{city_name}.geojson")
     gdf.to_csv(csv_file, index=False)
@@ -226,11 +220,9 @@ def process_data():
     plt.close(fig)
     map_file = os.path.join(output_dir, f"{category}_{city_name}_map.html")
     m = folium.Map(location=[lat, lon], zoom_start=12)
-    # When creating the map GeoDataFrame, filter out items without valid geometry:
     gdf_data = [{"name": feat["name"], "geometry": feat["geometry"]} for feat in [
         {"name": row["name"], "geometry": row["geometry"]} for row in gdf.itertuples(index=False)
     ] if feat.get("geometry") is not None]
-    # (Alternatively, our gdf already contains valid geometries.)
     for _, row in gdf.iterrows():
         if row.geometry:
             if isinstance(row.geometry, Point):
@@ -352,7 +344,6 @@ def hotels_search():
         })
         if lat_ and lon_:
             geo_features.append({"name": name, "geometry": Point(lon_, lat_)})
-    # Defensive creation: only include features with valid geometry
     gdf_data = [{"name": feat["name"], "geometry": feat["geometry"]} 
                 for feat in geo_features if feat.get("geometry") is not None]
     gdf = gpd.GeoDataFrame(gdf_data, crs="EPSG:4326")
@@ -573,7 +564,6 @@ def sightseeing_search():
         })
         if lat_ and lon_:
             geo_features.append({"name": name, "geometry": Point(lon_, lat_)})
-    # Defensive creation: include only features with valid geometry
     gdf_data = [{"name": feat["name"], "geometry": feat["geometry"]} 
                 for feat in geo_features if feat.get("geometry") is not None]
     gdf = gpd.GeoDataFrame(gdf_data, crs="EPSG:4326")

@@ -7,10 +7,8 @@ import pandas as pd
 import io
 import plotly.express as px
 
-# Base URL for the Flask API
 API_URL = "http://127.0.0.1:5000"
 
-# Initialize session state DataFrames
 if "city_data" not in st.session_state:
     st.session_state.city_data = None
 if "hotel_data" not in st.session_state:
