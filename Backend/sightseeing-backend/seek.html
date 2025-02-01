@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Sightseeing API Tester</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .response {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Universal Sightseeing API Tester</h1>
+
+    <!-- Authenticate Form -->
+    <div class="form-group">
+      <h2>1. Authenticate</h2>
+      <button onclick="authenticate()">Authenticate</button>
+    </div>
+
+    <!-- Country List Form -->
+    <div class="form-group">
+      <h2>2. Fetch Country List</h2>
+      <label for="tokenId">Token ID:</label>
+      <input type="text" id="tokenId" placeholder="Enter Token ID from Authenticate">
+      <button onclick="fetchCountryList()">Fetch Country List</button>
+    </div>
+
+    <!-- Destination Search Form -->
+    <div class="form-group">
+      <h2>3. Destination Search</h2>
+      <label for="tokenIdSearch">Token ID:</label>
+      <input type="text" id="tokenIdSearch" placeholder="Enter Token ID from Authenticate">
+      <label for="searchType">Search Type:</label>
+      <select id="searchType">
+        <option value="1">City</option>
+        <option value="2">Hotel</option>
+      </select>
+      <label for="countryCode">Country Code:</label>
+      <input type="text" id="countryCode" placeholder="Enter Country Code (e.g., GB)">
+      <button onclick="fetchDestinationSearch()">Search Destinations</button>
+    </div>
+
+    <!-- Agency Balance Form -->
+    <div class="form-group">
+      <h2>4. Get Agency Balance</h2>
+      <label for="tokenIdBalance">Token ID:</label>
+      <input type="text" id="tokenIdBalance" placeholder="Enter Token ID from Authenticate">
+      <label for="tokenAgencyId">Token Agency ID:</label>
+      <input type="text" id="tokenAgencyId" placeholder="Enter Token Agency ID">
+      <label for="tokenMemberId">Token Member ID:</label>
+      <input type="text" id="tokenMemberId" placeholder="Enter Token Member ID">
+      <button onclick="fetchAgencyBalance()">Get Agency Balance</button>
+    </div>
+
+    <!-- Response Display -->
+    <div class="form-group">
+      <h2>API Response</h2>
+      <div class="response" id="response"></div>
+    </div>
+  </div>
+
+  <script>
+    const backendUrl = 'http://localhost:5000'; // Replace with your backend URL if different
+
+    // Helper function to display API response
+    function displayResponse(data) {
+      document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+    }
+
+    // 1. Authenticate API
+    async function authenticate() {
+      try {
+        const response = await fetch(`${backendUrl}/authenticate`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+        });
+        const data = await response.json();
+        displayResponse(data);
+      } catch (error) {
+        displayResponse({ error: error.message });
+      }
+    }
+
+    // 2. Fetch Country List API
+    async function fetchCountryList() {
+      const tokenId = document.getElementById('tokenId').value;
+      if (!tokenId) {
+        alert('Please enter a Token ID');
+        return;
+      }
+
+      try {
+        const response = await fetch(`${backendUrl}/country-list`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ TokenId: tokenId }),
+        });
+        const data = await response.json();
+        displayResponse(data);
+      } catch (error) {
+        displayResponse({ error: error.message });
+      }
+    }
+
+    // 3. Fetch Destination Search API
+    async function fetchDestinationSearch() {
+      const tokenId = document.getElementById('tokenIdSearch').value;
+      const searchType = document.getElementById('searchType').value;
+      const countryCode = document.getElementById('countryCode').value;
+
+      if (!tokenId || !searchType || !countryCode) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      try {
+        const response = await fetch(`${backendUrl}/destination-search`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            TokenId: tokenId,
+            SearchType: searchType,
+            CountryCode: countryCode,
+          }),
+        });
+        const data = await response.json();
+        displayResponse(data);
+      } catch (error) {
+        displayResponse({ error: error.message });
+      }
+    }
+
+    // 4. Fetch Agency Balance API
+    async function fetchAgencyBalance() {
+      const tokenId = document.getElementById('tokenIdBalance').value;
+      const tokenAgencyId = document.getElementById('tokenAgencyId').value;
+      const tokenMemberId = document.getElementById('tokenMemberId').value;
+
+      if (!tokenId || !tokenAgencyId || !tokenMemberId) {
+        alert('Please fill all fields');
+        return;
+      }
+
+      try {
+        const response = await fetch(`${backendUrl}/agency-balance`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            TokenId: tokenId,
+            TokenAgencyId: tokenAgencyId,
+            TokenMemberId: tokenMemberId,
+          }),
+        });
+        const data = await response.json();
+        displayResponse(data);
+      } catch (error) {
+        displayResponse({ error: error.message });
+      }
+    }
+  </script>
+</body>
+</html>
