@@ -5,11 +5,11 @@
 - **User Authentication**
 - **Fetch Agency Information**
 - **Browse Available Sightseeing Options**
+- **Booking a Sightseeing Tour**
 
 ## Features to be Implemented
 
 - **View Sightseeing Details**
-- **Booking a Sightseeing Tour**
 - **Payment Process**
 - **View Booking History**
 - **Cancel or Modify a Booking**
