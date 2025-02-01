@@ -9,8 +9,8 @@
 - **Cancel or Modify a Booking**
 - **Logout and Session Management**
 - **View Sightseeing Details**
+- **View Booking History**
 
 ## Features to be Implemented
 
 - **Payment Process**
-- **View Booking History**
