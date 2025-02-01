@@ -4,13 +4,13 @@
 
 - **Authentication**
 - **Flight Search**
+- **Fare Rules**
+- **Fare Quote**
+- **Special Services (SSR) Selection**
 - **Logout**
 
 ## Features to be Implemented
 
-- **Fare Rules**
-- **Fare Quote**
-- **Special Services (SSR) Selection (Optional)**
 - **Booking Confirmation**
 - **Ticket Issuance**
 - **Manage Booking (Modifications & Cancellations)**
