@@ -1,0 +1,253 @@
+Code,Name,Capital,Continent,AreaInSqKm,Population,Currency
+AD,Andorra,Andorra la Vella,N/A,N/A,77006,N/A
+AE,United Arab Emirates,Abu Dhabi,N/A,N/A,9630959,N/A
+AF,Afghanistan,Kabul,N/A,N/A,37172386,N/A
+AG,Antigua and Barbuda,St. John's,N/A,N/A,96286,N/A
+AI,Anguilla,The Valley,N/A,N/A,13254,N/A
+AL,Albania,Tirana,N/A,N/A,2866376,N/A
+AM,Armenia,Yerevan,N/A,N/A,2951776,N/A
+AO,Angola,Luanda,N/A,N/A,30809762,N/A
+AQ,Antarctica,,N/A,N/A,0,N/A
+AR,Argentina,Buenos Aires,N/A,N/A,44494502,N/A
+AS,American Samoa,Pago Pago,N/A,N/A,55465,N/A
+AT,Austria,Vienna,N/A,N/A,8847037,N/A
+AU,Australia,Canberra,N/A,N/A,24992369,N/A
+AW,Aruba,Oranjestad,N/A,N/A,105845,N/A
+AX,Aland Islands,Mariehamn,N/A,N/A,26711,N/A
+AZ,Azerbaijan,Baku,N/A,N/A,9942334,N/A
+BA,Bosnia and Herzegovina,Sarajevo,N/A,N/A,3323929,N/A
+BB,Barbados,Bridgetown,N/A,N/A,286641,N/A
+BD,Bangladesh,Dhaka,N/A,N/A,161356039,N/A
+BE,Belgium,Brussels,N/A,N/A,11422068,N/A
+BF,Burkina Faso,Ouagadougou,N/A,N/A,19751535,N/A
+BG,Bulgaria,Sofia,N/A,N/A,7000039,N/A
+BH,Bahrain,Manama,N/A,N/A,1569439,N/A
+BI,Burundi,Gitega,N/A,N/A,11175378,N/A
+BJ,Benin,Porto-Novo,N/A,N/A,11485048,N/A
+BL,Saint Barthelemy,Gustavia,N/A,N/A,8450,N/A
+BM,Bermuda,Hamilton,N/A,N/A,63968,N/A
+BN,Brunei,Bandar Seri Begawan,N/A,N/A,428962,N/A
+BO,Bolivia,Sucre,N/A,N/A,11353142,N/A
+BQ,"Bonaire, Saint Eustatius and Saba ",,N/A,N/A,18012,N/A
+BR,Brazil,Brasilia,N/A,N/A,209469333,N/A
+BS,Bahamas,Nassau,N/A,N/A,385640,N/A
+BT,Bhutan,Thimphu,N/A,N/A,754394,N/A
+BV,Bouvet Island,,N/A,N/A,0,N/A
+BW,Botswana,Gaborone,N/A,N/A,2254126,N/A
+BY,Belarus,Minsk,N/A,N/A,9485386,N/A
+BZ,Belize,Belmopan,N/A,N/A,383071,N/A
+CA,Canada,Ottawa,N/A,N/A,37058856,N/A
+CC,Cocos Islands,West Island,N/A,N/A,628,N/A
+CD,Democratic Republic of the Congo,Kinshasa,N/A,N/A,84068091,N/A
+CF,Central African Republic,Bangui,N/A,N/A,4666377,N/A
+CG,Republic of the Congo,Brazzaville,N/A,N/A,5244363,N/A
+CH,Switzerland,Bern,N/A,N/A,8516543,N/A
+CI,Ivory Coast,Yamoussoukro,N/A,N/A,25069229,N/A
+CK,Cook Islands,Avarua,N/A,N/A,21388,N/A
+CL,Chile,Santiago,N/A,N/A,18729160,N/A
+CM,Cameroon,Yaounde,N/A,N/A,25216237,N/A
+CN,China,Beijing,N/A,N/A,1411778724,N/A
+CO,Colombia,Bogota,N/A,N/A,49648685,N/A
+CR,Costa Rica,San Jose,N/A,N/A,4999441,N/A
+CU,Cuba,Havana,N/A,N/A,11338138,N/A
+CV,Cabo Verde,Praia,N/A,N/A,543767,N/A
+CW,Curacao, Willemstad,N/A,N/A,159849,N/A
+CX,Christmas Island,Flying Fish Cove,N/A,N/A,1500,N/A
+CY,Cyprus,Nicosia,N/A,N/A,1189265,N/A
+CZ,Czechia,Prague,N/A,N/A,10625695,N/A
+DE,Germany,Berlin,N/A,N/A,82927922,N/A
+DJ,Djibouti,Djibouti,N/A,N/A,958920,N/A
+DK,Denmark,Copenhagen,N/A,N/A,5797446,N/A
+DM,Dominica,Roseau,N/A,N/A,71625,N/A
+DO,Dominican Republic,Santo Domingo,N/A,N/A,10627165,N/A
+DZ,Algeria,Algiers,N/A,N/A,42228429,N/A
+EC,Ecuador,Quito,N/A,N/A,17084357,N/A
+EE,Estonia,Tallinn,N/A,N/A,1320884,N/A
+EG,Egypt,Cairo,N/A,N/A,98423595,N/A
+EH,Western Sahara,El-Aaiun,N/A,N/A,273008,N/A
+ER,Eritrea,Asmara,N/A,N/A,6209262,N/A
+ES,Spain,Madrid,N/A,N/A,46723749,N/A
+ET,Ethiopia,Addis Ababa,N/A,N/A,109224559,N/A
+FI,Finland,Helsinki,N/A,N/A,5518050,N/A
+FJ,Fiji,Suva,N/A,N/A,883483,N/A
+FK,Falkland Islands,Stanley,N/A,N/A,2638,N/A
+FM,Micronesia,Palikir,N/A,N/A,112640,N/A
+FO,Faroe Islands,Torshavn,N/A,N/A,48497,N/A
+FR,France,Paris,N/A,N/A,66987244,N/A
+GA,Gabon,Libreville,N/A,N/A,2119275,N/A
+GB,United Kingdom,London,N/A,N/A,66488991,N/A
+GD,Grenada,St. George's,N/A,N/A,111454,N/A
+GE,Georgia,Tbilisi,N/A,N/A,3731000,N/A
+GF,French Guiana,Cayenne,N/A,N/A,195506,N/A
+GG,Guernsey,St Peter Port,N/A,N/A,65228,N/A
+GH,Ghana,Accra,N/A,N/A,29767108,N/A
+GI,Gibraltar,Gibraltar,N/A,N/A,33718,N/A
+GL,Greenland,Nuuk,N/A,N/A,56025,N/A
+GM,Gambia,Banjul,N/A,N/A,2280102,N/A
+GN,Guinea,Conakry,N/A,N/A,12414318,N/A
+GP,Guadeloupe,Basse-Terre,N/A,N/A,443000,N/A
+GQ,Equatorial Guinea,Malabo,N/A,N/A,1308974,N/A
+GR,Greece,Athens,N/A,N/A,10727668,N/A
+GS,South Georgia and the South Sandwich Islands,Grytviken,N/A,N/A,30,N/A
+GT,Guatemala,Guatemala City,N/A,N/A,17247807,N/A
+GU,Guam,Hagatna,N/A,N/A,165768,N/A
+GW,Guinea-Bissau,Bissau,N/A,N/A,1874309,N/A
+GY,Guyana,Georgetown,N/A,N/A,779004,N/A
+HK,Hong Kong,Hong Kong,N/A,N/A,7451000,N/A
+HM,Heard Island and McDonald Islands,,N/A,N/A,0,N/A
+HN,Honduras,Tegucigalpa,N/A,N/A,9587522,N/A
+HR,Croatia,Zagreb,N/A,N/A,3871833,N/A
+HT,Haiti,Port-au-Prince,N/A,N/A,11123176,N/A
+HU,Hungary,Budapest,N/A,N/A,9768785,N/A
+ID,Indonesia,Jakarta,N/A,N/A,267663435,N/A
+IE,Ireland,Dublin,N/A,N/A,4853506,N/A
+IL,Israel,Jerusalem,N/A,N/A,8883800,N/A
+IM,Isle of Man,Douglas,N/A,N/A,84077,N/A
+IN,India,New Delhi,N/A,N/A,1352617328,N/A
+IO,British Indian Ocean Territory,Diego Garcia,N/A,N/A,4000,N/A
+IQ,Iraq,Baghdad,N/A,N/A,38433600,N/A
+IR,Iran,Tehran,N/A,N/A,81800269,N/A
+IS,Iceland,Reykjavik,N/A,N/A,353574,N/A
+IT,Italy,Rome,N/A,N/A,60431283,N/A
+JE,Jersey,Saint Helier,N/A,N/A,90812,N/A
+JM,Jamaica,Kingston,N/A,N/A,2934855,N/A
+JO,Jordan,Amman,N/A,N/A,9956011,N/A
+JP,Japan,Tokyo,N/A,N/A,126529100,N/A
+KE,Kenya,Nairobi,N/A,N/A,51393010,N/A
+KG,Kyrgyzstan,Bishkek,N/A,N/A,6315800,N/A
+KH,Cambodia,Phnom Penh,N/A,N/A,16249798,N/A
+KI,Kiribati,Tarawa,N/A,N/A,115847,N/A
+KM,Comoros,Moroni,N/A,N/A,832322,N/A
+KN,Saint Kitts and Nevis,Basseterre,N/A,N/A,52441,N/A
+KP,North Korea,Pyongyang,N/A,N/A,25549819,N/A
+KR,South Korea,Seoul,N/A,N/A,51635256,N/A
+XK,Kosovo,Pristina,N/A,N/A,1845300,N/A
+KW,Kuwait,Kuwait City,N/A,N/A,4137309,N/A
+KY,Cayman Islands,George Town,N/A,N/A,64174,N/A
+KZ,Kazakhstan,Nur-Sultan,N/A,N/A,18276499,N/A
+LA,Laos,Vientiane,N/A,N/A,7061507,N/A
+LB,Lebanon,Beirut,N/A,N/A,6848925,N/A
+LC,Saint Lucia,Castries,N/A,N/A,181889,N/A
+LI,Liechtenstein,Vaduz,N/A,N/A,37910,N/A
+LK,Sri Lanka,Colombo,N/A,N/A,21670000,N/A
+LR,Liberia,Monrovia,N/A,N/A,4818977,N/A
+LS,Lesotho,Maseru,N/A,N/A,2108132,N/A
+LT,Lithuania,Vilnius,N/A,N/A,2789533,N/A
+LU,Luxembourg,Luxembourg,N/A,N/A,607728,N/A
+LV,Latvia,Riga,N/A,N/A,1926542,N/A
+LY,Libya,Tripoli,N/A,N/A,6678567,N/A
+MA,Morocco,Rabat,N/A,N/A,36029138,N/A
+MC,Monaco,Monaco,N/A,N/A,38682,N/A
+MD,Moldova,Chisinau,N/A,N/A,3545883,N/A
+ME,Montenegro,Podgorica,N/A,N/A,622345,N/A
+MF,Saint Martin,Marigot,N/A,N/A,37264,N/A
+MG,Madagascar,Antananarivo,N/A,N/A,26262368,N/A
+MH,Marshall Islands,Majuro,N/A,N/A,58413,N/A
+MK,North Macedonia,Skopje,N/A,N/A,2082958,N/A
+ML,Mali,Bamako,N/A,N/A,19077690,N/A
+MM,Myanmar,Nay Pyi Taw,N/A,N/A,53708395,N/A
+MN,Mongolia,Ulaanbaatar,N/A,N/A,3170208,N/A
+MO,Macao,Macao,N/A,N/A,631636,N/A
+MP,Northern Mariana Islands,Saipan,N/A,N/A,56882,N/A
+MQ,Martinique,Fort-de-France,N/A,N/A,432900,N/A
+MR,Mauritania,Nouakchott,N/A,N/A,4403319,N/A
+MS,Montserrat,Plymouth,N/A,N/A,9341,N/A
+MT,Malta,Valletta,N/A,N/A,483530,N/A
+MU,Mauritius,Port Louis,N/A,N/A,1265303,N/A
+MV,Maldives,Male,N/A,N/A,515696,N/A
+MW,Malawi,Lilongwe,N/A,N/A,17563749,N/A
+MX,Mexico,Mexico City,N/A,N/A,126190788,N/A
+MY,Malaysia,Kuala Lumpur,N/A,N/A,31528585,N/A
+MZ,Mozambique,Maputo,N/A,N/A,29495962,N/A
+NA,Namibia,Windhoek,N/A,N/A,2448255,N/A
+NC,New Caledonia,Noumea,N/A,N/A,284060,N/A
+NE,Niger,Niamey,N/A,N/A,22442948,N/A
+NF,Norfolk Island,Kingston,N/A,N/A,1828,N/A
+NG,Nigeria,Abuja,N/A,N/A,195874740,N/A
+NI,Nicaragua,Managua,N/A,N/A,6465513,N/A
+NL,Netherlands,Amsterdam,N/A,N/A,17231017,N/A
+NO,Norway,Oslo,N/A,N/A,5314336,N/A
+NP,Nepal,Kathmandu,N/A,N/A,28087871,N/A
+NR,Nauru,Yaren,N/A,N/A,12704,N/A
+NU,Niue,Alofi,N/A,N/A,2166,N/A
+NZ,New Zealand,Wellington,N/A,N/A,4885500,N/A
+OM,Oman,Muscat,N/A,N/A,4829483,N/A
+PA,Panama,Panama City,N/A,N/A,4176873,N/A
+PE,Peru,Lima,N/A,N/A,31989256,N/A
+PF,French Polynesia,Papeete,N/A,N/A,277679,N/A
+PG,Papua New Guinea,Port Moresby,N/A,N/A,8606316,N/A
+PH,Philippines,Manila,N/A,N/A,106651922,N/A
+PK,Pakistan,Islamabad,N/A,N/A,212215030,N/A
+PL,Poland,Warsaw,N/A,N/A,37978548,N/A
+PM,Saint Pierre and Miquelon,Saint-Pierre,N/A,N/A,7012,N/A
+PN,Pitcairn,Adamstown,N/A,N/A,46,N/A
+PR,Puerto Rico,San Juan,N/A,N/A,3195153,N/A
+PS,Palestinian Territory,East Jerusalem,N/A,N/A,4569087,N/A
+PT,Portugal,Lisbon,N/A,N/A,10281762,N/A
+PW,Palau,Melekeok,N/A,N/A,17907,N/A
+PY,Paraguay,Asuncion,N/A,N/A,6956071,N/A
+QA,Qatar,Doha,N/A,N/A,2781677,N/A
+RE,Reunion,Saint-Denis,N/A,N/A,776948,N/A
+RO,Romania,Bucharest,N/A,N/A,19473936,N/A
+RS,Serbia,Belgrade,N/A,N/A,6982084,N/A
+RU,Russia,Moscow,N/A,N/A,144478050,N/A
+RW,Rwanda,Kigali,N/A,N/A,12301939,N/A
+SA,Saudi Arabia,Riyadh,N/A,N/A,33699947,N/A
+SB,Solomon Islands,Honiara,N/A,N/A,652858,N/A
+SC,Seychelles,Victoria,N/A,N/A,96762,N/A
+SD,Sudan,Khartoum,N/A,N/A,41801533,N/A
+SS,South Sudan,Juba,N/A,N/A,8260490,N/A
+SE,Sweden,Stockholm,N/A,N/A,10183175,N/A
+SG,Singapore,Singapore,N/A,N/A,5638676,N/A
+SH,Saint Helena,Jamestown,N/A,N/A,7460,N/A
+SI,Slovenia,Ljubljana,N/A,N/A,2067372,N/A
+SJ,Svalbard and Jan Mayen,Longyearbyen,N/A,N/A,2550,N/A
+SK,Slovakia,Bratislava,N/A,N/A,5447011,N/A
+SL,Sierra Leone,Freetown,N/A,N/A,7650154,N/A
+SM,San Marino,San Marino,N/A,N/A,33785,N/A
+SN,Senegal,Dakar,N/A,N/A,15854360,N/A
+SO,Somalia,Mogadishu,N/A,N/A,15008154,N/A
+SR,Suriname,Paramaribo,N/A,N/A,575991,N/A
+ST,Sao Tome and Principe,Sao Tome,N/A,N/A,197700,N/A
+SV,El Salvador,San Salvador,N/A,N/A,6420744,N/A
+SX,Sint Maarten,Philipsburg,N/A,N/A,40654,N/A
+SY,Syria,Damascus,N/A,N/A,16906283,N/A
+SZ,Eswatini,Mbabane,N/A,N/A,1136191,N/A
+TC,Turks and Caicos Islands,Cockburn Town,N/A,N/A,37665,N/A
+TD,Chad,N'Djamena,N/A,N/A,15477751,N/A
+TF,French Southern Territories,Port-aux-Francais,N/A,N/A,140,N/A
+TG,Togo,Lome,N/A,N/A,7889094,N/A
+TH,Thailand,Bangkok,N/A,N/A,69428524,N/A
+TJ,Tajikistan,Dushanbe,N/A,N/A,9100837,N/A
+TK,Tokelau,,N/A,N/A,1466,N/A
+TL,Timor Leste,Dili,N/A,N/A,1267972,N/A
+TM,Turkmenistan,Ashgabat,N/A,N/A,5850908,N/A
+TN,Tunisia,Tunis,N/A,N/A,11565204,N/A
+TO,Tonga,Nuku'alofa,N/A,N/A,103197,N/A
+TR,Turkey,Ankara,N/A,N/A,82319724,N/A
+TT,Trinidad and Tobago,Port of Spain,N/A,N/A,1389858,N/A
+TV,Tuvalu,Funafuti,N/A,N/A,11508,N/A
+TW,Taiwan,Taipei,N/A,N/A,23451837,N/A
+TZ,Tanzania,Dodoma,N/A,N/A,56318348,N/A
+UA,Ukraine,Kyiv,N/A,N/A,44622516,N/A
+UG,Uganda,Kampala,N/A,N/A,42723139,N/A
+UM,United States Minor Outlying Islands,,N/A,N/A,0,N/A
+US,United States,Washington,N/A,N/A,327167434,N/A
+UY,Uruguay,Montevideo,N/A,N/A,3449299,N/A
+UZ,Uzbekistan,Tashkent,N/A,N/A,32955400,N/A
+VA,Vatican,Vatican City,N/A,N/A,921,N/A
+VC,Saint Vincent and the Grenadines,Kingstown,N/A,N/A,110211,N/A
+VE,Venezuela,Caracas,N/A,N/A,28870195,N/A
+VG,British Virgin Islands,Road Town,N/A,N/A,29802,N/A
+VI,U.S. Virgin Islands,Charlotte Amalie,N/A,N/A,106977,N/A
+VN,Vietnam,Hanoi,N/A,N/A,95540395,N/A
+VU,Vanuatu,Port Vila,N/A,N/A,292680,N/A
+WF,Wallis and Futuna,Mata Utu,N/A,N/A,16025,N/A
+WS,Samoa,Apia,N/A,N/A,196130,N/A
+YE,Yemen,Sanaa,N/A,N/A,28498687,N/A
+YT,Mayotte,Mamoudzou,N/A,N/A,279471,N/A
+ZA,South Africa,Pretoria,N/A,N/A,57779622,N/A
+ZM,Zambia,Lusaka,N/A,N/A,17351822,N/A
+ZW,Zimbabwe,Harare,N/A,N/A,14439018,N/A
+CS,Serbia and Montenegro,Belgrade,N/A,N/A,10829175,N/A
+AN,Netherlands Antilles,Willemstad,N/A,N/A,300000,N/A
