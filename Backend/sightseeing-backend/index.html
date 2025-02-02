@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sightseeing API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sightseeing API Test</h1>
+
+        <section>
+            <h2>Authenticate</h2>
+            <button onclick="authenticate()">Authenticate</button>
+            <pre id="authResult">Click Authenticate to see the response</pre>
+        </section>
+
+        <section>
+            <h2>Country List</h2>
+            <label for="token">Token ID:</label>
+            <input type="text" id="countryToken" placeholder="Enter Token ID">
+            <button onclick="fetchCountryList()">Fetch Country List</button>
+            <pre id="countryResult">Click Fetch Country List to see the response</pre>
+        </section>
+
+        <section>
+            <h2>Destination Search</h2>
+            <label for="destinationToken">Token ID:</label>
+            <input type="text" id="destinationToken" placeholder="Enter Token ID">
+            <label for="searchType">Search Type:</label>
+            <input type="text" id="searchType" placeholder="1 (City) or 2 (Hotel)">
+            <label for="countryCode">Country Code:</label>
+            <input type="text" id="countryCode" placeholder="e.g., IN">
+            <button onclick="fetchDestinationSearch()">Fetch Destination Search</button>
+            <pre id="destinationResult">Click Fetch Destination Search to see the response</pre>
+        </section>
+
+        <section>
+            <h2>Agency Balance</h2>
+            <label for="agencyToken">Token ID:</label>
+            <input type="text" id="agencyToken" placeholder="Enter Token ID">
+            <label for="agencyId">Agency ID:</label>
+            <input type="text" id="agencyId" placeholder="Enter Agency ID">
+            <label for="memberId">Member ID:</label>
+            <input type="text" id="memberId" placeholder="Enter Member ID">
+            <button onclick="fetchAgencyBalance()">Fetch Agency Balance</button>
+            <pre id="balanceResult">Click Fetch Agency Balance to see the response</pre>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
