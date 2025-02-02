@@ -60,11 +60,6 @@ export async function POST(req: Request) {
     console.log("✅ User created event received!");
     console.log("📦 Received Data:", evt.data);
 
-    if (!last_name) {
-        console.error("❌ Missing required fields: lastName is null!");
-        return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
-    }
-
     const user = {
       clerkId: id,
       email: email_addresses[0]?.email_address || "",
