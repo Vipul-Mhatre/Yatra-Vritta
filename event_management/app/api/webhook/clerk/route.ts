@@ -65,7 +65,7 @@ export async function POST(req: Request) {
       email: email_addresses[0]?.email_address || "",
       username: username
         ? username
-        : first_name?.toLowerCase() + last_name?.toLowerCase(),
+        : first_name? first_name.toLowerCase() : last_name? last_name.toLowerCase() : "",
       firstName: first_name || "",
       lastName: last_name || "",
       photo: image_url || "",
