@@ -30,19 +30,24 @@ const populateEvent = (query: any) => {
 // CREATE
 export async function createEvent({ userId, event, path }: CreateEventParams) {
   try {
-    await connectToDatabase()
+    await connectToDatabase();
+    console.log("Creating event for user:", userId); // Debugging line
+    
+    const organizer = await User.findById(userId);
+    if (!organizer) {
+      console.error("Organizer not found for ID:", userId);
+      throw new Error('Organizer not found');
+    }
+    
+    const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId });
+    revalidatePath(path);
 
-    const organizer = await User.findById(userId)
-    if (!organizer) throw new Error('Organizer not found')
-
-    const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId })
-    revalidatePath(path)
-
-    return JSON.parse(JSON.stringify(newEvent))
+    return JSON.parse(JSON.stringify(newEvent));
   } catch (error) {
-    handleError(error)
+    handleError(error);
   }
 }
+
 
 // GET ONE EVENT BY ID
 export async function getEventById(eventId: string) {
