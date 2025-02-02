@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import { ClerkProvider } from '@clerk/nextjs'
+import { auth, ClerkProvider } from '@clerk/nextjs'
 
 import './globals.css'
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+  }) {
   return (
     <ClerkProvider>
       <html lang="en">

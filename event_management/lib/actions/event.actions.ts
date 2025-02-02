@@ -33,13 +33,14 @@ export async function createEvent({ userId, event, path }: CreateEventParams) {
     await connectToDatabase();
     console.log("Creating event for user:", userId); // Debugging line
     
-    const organizer = await User.findById(userId);
+    const organizer = await User.findOne({ clerkId: userId });
     if (!organizer) {
       console.error("Organizer not found for ID:", userId);
-      throw new Error('Organizer not found');
+      throw new Error("Organizer not found");
     }
+    console.log("Organizer: ", organizer);
     
-    const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId });
+    const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: organizer._id });
     revalidatePath(path);
 
     return JSON.parse(JSON.stringify(newEvent));
