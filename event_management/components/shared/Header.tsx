@@ -10,10 +10,13 @@ const Header = () => {
     <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between">
         <Link href="/" className="w-36">
-          <Image 
-            src="/assets/images/logo.svg" width={128} height={38}
+          <div className="flex justify-center items-center gap-1 w-max">
+            <Image 
+            src="/assets/images/logo.png" width={50} height={10}
             alt="Yatra Vritta logo" 
-          />
+            />
+            <p className="text-4xl font-semibold">Yatra Vritta</p>
+          </div>
         </Link>
 
         <SignedIn>
