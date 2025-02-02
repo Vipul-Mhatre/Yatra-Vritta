@@ -57,30 +57,35 @@ export async function POST(req: Request) {
   if(eventType === 'user.created') {
     const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
 
-    console.log("User created")
-    console.log(id, email_addresses, image_url, first_name, last_name, username);
+    console.log("✅ User created event received!");
+    console.log("📦 Received Data:", evt.data);
+
+    if (!username || !last_name) {
+        console.error("❌ Missing required fields: username or lastName is null!");
+        return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
 
     const user = {
       clerkId: id,
-      email: email_addresses[0].email_address,
+      email: email_addresses[0]?.email_address || "",
       username: username!,
-      firstName: first_name,
-      lastName: last_name,
-      photo: image_url,
+      firstName: first_name || "",
+      lastName: last_name || "",
+      photo: image_url || "",
     }
 
     const newUser = await createUser(user);
 
-    if(newUser) {
+    if (newUser) {
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {
           userId: newUser._id
         }
-      })
+      });
     }
 
-    return NextResponse.json({ message: 'OK', user: newUser })
-  }
+    return NextResponse.json({ message: 'OK', user: newUser });
+}
 
   if (eventType === 'user.updated') {
     const {id, image_url, first_name, last_name, username } = evt.data
