@@ -3,7 +3,7 @@ import requests
 
 API_URL = "http://127.0.0.1:5000/chat"
 
-st.title("TBO AI Chatbot")
+st.title("Yatra Vritta Chatbot")
 st.write("Ask me about Medical Tourism, MICE, or Destination Weddings!")
 
 if "chat_history" not in st.session_state:
