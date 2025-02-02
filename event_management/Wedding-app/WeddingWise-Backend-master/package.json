@@ -1,0 +1,28 @@
+{
+  "name": "weddingwise---backend",
+  "version": "1.0.0",
+  "description": "weddingwise-be",
+  "main": "api.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api.js",
+    "dev": "nodemon api.js"
+  },
+  "keywords": [],
+  "author": "karan",
+  "license": "ISC",
+  "dependencies": {
+    "@netlify/functions": "^2.8.1",
+    "@types/express": "^4.17.21", 
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.4",
+    "serverless-http": "^3.2.0"
+  }
+}
