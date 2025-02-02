@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TBO Virtual Assistant</title>
+    <style>
+        #chat-container { max-width: 500px; margin: 20px auto; }
+        #chat-messages { height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; }
+        #message-input { width: 80%; padding: 5px; }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const message = input.value;
+            if (!message) return;
+
+            fetch('http://localhost:5000/chat', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message: message})
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messagesDiv = document.getElementById('chat-messages');
+                messagesDiv.innerHTML += `<p><b>You:</b> ${message}</p>`;
+                messagesDiv.innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+                input.value = '';
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            });
+        }
+    </script>
+</body>
+</html>
