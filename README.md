@@ -5,8 +5,7 @@
 
 Yatra-Vritta is an AI-driven platform that streamlines travel planning for medical tourism, MICE events, and destination weddings using real-time data and machine learning.
 
-
-The Required features of fetching data from api provided are in folder event_management/app/api
+###The Required features of fetching data from api provided are in folder event_management/app/api
 
 ## Features
 
@@ -18,11 +17,13 @@ The Required features of fetching data from api provided are in folder event_man
 
 ## Tech Stack
 
-### **Frontend:** React.js, React Native, Google Maps API, i18next
+### **Frontend:** Next.js, React.js, React Native, Google Maps API, i18next
 
 ### **Backend:** Node.js, Express.js, Flask, MongoDB, PostgreSQL
 
 ### **AI/ML Services:** TensorFlow, OpenCV, GANs, Python NLP
+
+### **Other:** Clerk, Open Street Mapper API
 
 ### **Infrastructure:** AWS (S3, EC2), Cloudflare, Docker, Kubernetes
 
