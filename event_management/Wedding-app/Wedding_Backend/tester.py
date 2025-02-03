@@ -15,7 +15,7 @@ def login_user():
     try:
         response_data = response.json()
         print("Response:", response_data)
-        return response_data.get("token")  # Return JWT token
+        return response_data.get("token") 
     except Exception as e:
         print("Error decoding response JSON:", e)
         print("Response Text:", response.text)

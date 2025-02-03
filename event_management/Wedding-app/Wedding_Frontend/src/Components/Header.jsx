@@ -35,7 +35,7 @@ const Header = () => {
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white mr-auto"
       >
         <span className="px-2 py-1   font-bold text-2xl bg-gradient-to-r from bg-blue-500 to from-indigo-600 text-transparent bg-clip-text">
-          WeddingWise
+          Yatra Vritta
         </span>
       </Link>
       
@@ -58,9 +58,6 @@ const Header = () => {
               <span className="block text-sm"> 📧<strong>{currentuser.rest.email}</strong></span>
             </DropdownHeader>
 
-            
-              
-            
             <DropdownDivider />
             <Link to="/Signin">
             <DropdownItem onClick={handleSignout}> ⬅️ <strong className="text-red-700">Sign out</strong></DropdownItem>

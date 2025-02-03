@@ -49,7 +49,7 @@ const Signup = () => {
         <div>
           <div className=" text-3xl font-semibold dark:text-white">
             <span className="text-black">
-              WeddingWise
+              Yatra Vritta
             </span>
           </div>
           <p className="text-m mt-6">

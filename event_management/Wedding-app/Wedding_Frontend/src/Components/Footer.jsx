@@ -10,7 +10,7 @@ const FooterCom = () => {
             <div>
             <div className=" text-3xl font-semibold dark:text-white">
             <span className="text-black">
-              WeddingWise
+              Yatra Vritta
             </span>
           </div>
             </div>
@@ -26,7 +26,7 @@ const FooterCom = () => {
               <div>
                 <Footer.Title title="Follow us" />
                 <Footer.LinkGroup col>
-                  <Footer.Link href="https://github.com/KARUNAKARAN085">Github</Footer.Link>
+                  <Footer.Link href="https://github.com/Vipul-Mhatre/">Github</Footer.Link>
                   <Footer.Link href="#">LinkedIn</Footer.Link>
                 </Footer.LinkGroup>
               </div>
@@ -41,12 +41,12 @@ const FooterCom = () => {
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between font-bold">
-            <Footer.Copyright href="#" by="RK KARUNAKARAN" year={new Date().getFullYear()} />
+            <Footer.Copyright href="#" by="Team Tech4Stack" year={new Date().getFullYear()} />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="#" icon={BsFacebook} />
               <Footer.Icon href="#" icon={BsInstagram} />
               <Footer.Icon href="#" icon={BsTwitter} />
-              <Footer.Icon href="https://github.com/KARUNAKARAN085" icon={BsGithub} />
+              <Footer.Icon href="https://github.com/Vipul-Mhatre/Yatra-Vritta" icon={BsGithub} />
               <Footer.Icon href="#" icon={BsLinkedin} />
             </div>
           </div>

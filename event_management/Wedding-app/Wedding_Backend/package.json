@@ -1,7 +1,7 @@
 {
-  "name": "weddingwise---backend",
+  "name": "yatravritta---backend",
   "version": "1.0.0",
-  "description": "weddingwise-be",
+  "description": "yatravritta-be",
   "main": "api.js",
   "type": "module",
   "scripts": {

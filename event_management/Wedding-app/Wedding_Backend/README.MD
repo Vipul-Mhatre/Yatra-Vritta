@@ -1,4 +1,4 @@
-# WeddingWise - Event Management App
+# Yatra Vritta - Event Management App
 
 ## Project Description:
 

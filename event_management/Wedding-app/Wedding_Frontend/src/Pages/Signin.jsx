@@ -51,7 +51,7 @@ const Signin = () => {
         <div>
           <div className="text-3xl font-semibold dark:text-white">
             <span className="px-2 py-1 bg-gradient-to-r from bg-pink-600 via-purple-500 to from-indigo-600 text-transparent bg-clip-text">
-              WeddingWise
+              Yatra Vritta
             </span>
           </div>
           <p className="text-m mt-6">
