@@ -8,6 +8,14 @@ At the heart of Yatra-Vritta lies an intelligent recommendation system that leve
 
 # The Required features of fetching data from api provided are in folder event_management/app/api
 
+## Hosted  Link:
+
+https://yatra-vritta.vercel.app/
+
+## Link to research papers used to build recommendation engine :
+https://drive.google.com/drive/folders/1xv-HhsFviRTTgTCX4G71v2_dJ_u8YetD
+
+
 ## Demo Video: 
    https://drive.google.com/file/d/1Fv4EMc9-LBOLiV_7CD2piDvq5XL_v3lW/view?usp=drive_link
    
